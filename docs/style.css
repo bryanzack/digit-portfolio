@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html {
+  all: unset;
+  overflow: hidden;
+  font-family: 'Roboto';
+}
+
+.body {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.header {
+  display: flex;
+  width: 100vw;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: white;
+}
+
+.header-container {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 100%;
+  border: 1px solid black;
+  background: white;
+  opacity: 85%;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  height: 70%;
+  border: 1px solid black;
+  background: white;
+  opacity: 85%;
+}
+
+.content a {
+  text-decoration: none;
+  color: black;
+}
+.content a:hover{ 
+  text-decoration: underline;
+}
+
+.blurry-pic {
+  position: fixed;
+  z-index -1;
+  width: calc(100vw + 100px);
+  height: calc(100vh + 100px);
+  opacity: 60%;
+  filter: blur(30px);
+}
